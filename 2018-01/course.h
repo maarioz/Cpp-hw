@@ -8,20 +8,18 @@
 class Course {
 
 public:
-	const std::string code;
-	const std::string teacher;
+    const std::string code;
+    const std::string teacher;
 
-	Course(const std::string& code, const std::string& teacher)
-	    : code(code)
-	    , teacher(teacher) {}
+    Course(const std::string& code, const std::string& teacher) : code(code), teacher(teacher) {}
 
-	void print() const {
-		if (teacher.empty()) {
-			std::cout << "Course: " + code + '\n';
-		} else {
-			std::cout << "Course: " + code + " [Teacher: " + teacher + "]\n";
-		}
-	}
+    void print() const {
+        if (teacher.empty()) {
+	    std::cout << "Course: " + code + '\n';
+	} else {
+	    std::cout << "Course: " + code + " [Teacher: " + teacher + "]\n";
+        }
+    }
 };
 
 #endif
