@@ -7,22 +7,22 @@
 
 class Handler {
 private:
-	ReservationSystem rSystem;
+    ReservationSystem rSystem;
 
-	void printIntro() const;
+    void printIntro() const;
 
-	bool addRoom();
+    bool addRoom();
 
-	bool addCourse();
+    bool addCourse();
 
-	bool addReservation();
+    bool addReservation();
 
-	bool getOccupation() const;
+    bool getOccupation() const;
 
-	const std::string getInput() const;
+    const std::string getInput() const;
 
 public:
-	void handle();
+    void handle();
 };
 
 #endif
